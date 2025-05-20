@@ -60,14 +60,22 @@
             <div class="logo" style="display: flex; flex-direction: row; align-items: center;">
                 <img src="img/newlogo2.png" alt="Elitech Designs Logo" style="height:50px; margin-right:12px; transform: scale(1.15);">
             </div>
+            <style>
+                @media (max-width: 600px) {
+                    nav .logo {
+                        justify-content: flex-end !important;
+                        width: 100%;
+                    }
+                }
+            </style>
 
             <div class="navLinks">
                 <div><a href="#" target="_blank">HOME</a></div>
                 <div><a href="#" target="_blank">ABOUT UA</a></div>
                 <div><a href="#" target="_blank">SERVICES</a></div>
-                <div><a href="#" target="_blank">portfolio</a></div>
-                <div><a href="#" target="_blank">components</a></div>
-                <div><a href="#" target="_blank">contact</a></div>
+                <div><a href="#" target="_blank">PORTFOLIO</a></div>
+                <div><a href="#" target="_blank">COMPONENTS</a></div>
+                <div><a href="#" target="_blank">CONTACT</a></div>
             </div>
             <input type="checkbox" id="ch2">
 
@@ -229,7 +237,7 @@
         </style>
     </header>
     <!-- Start About -->
-    <section class="about">
+    <!-- <section class="about">
         <div class="container">
             <div class="textBx" data-aos="fade-right" data-aos-duration="1000">
                 <h2>Welcome to ELITECH DESIGNS</h2>
@@ -248,7 +256,7 @@
                 <img src="img/img1.png" alt="about Us">
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Start Features -->
     <section class="features">
@@ -294,288 +302,7 @@
         </div>
     </section>
 
-    <!-- Start Services -->
-    <section class="services">
-        <h2 data-aos="fade-down" data-aos-duration="1000">our services</h2>
-        <div class="container">
-            <div class="serItem" data-aos="fade-up" data-aos-duration="2000">
-                <div class="imgBx">
-                    <img src="img/card1.jpg" alt="service1">
-                    <p class="title">Construction Management</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis doloribus nemo at possimus
-                    optio quod error voluptatum sed laboriosam quam, expedita itaque vero ipsa ut quis natus veritatis
-                    et accusamus? Reiciendis veniam rem, magnam placeat rerum odit id officia minus facilis inventore.
-                    Itaque voluptates quam voluptatum sed at temporibus.</p>
-                <a href="#" class="btn2">show more</a>
-            </div>
-            <div class="serItem" data-aos="fade-up" data-aos-duration="2000">
-                <div class="imgBx">
-                    <img src="img/card2.jpg" alt="service2">
-                    <p class="title">renovation</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis doloribus nemo at possimus
-                    optio quod error voluptatum sed laboriosam quam, expedita itaque vero ipsa ut quis natus veritatis
-                    et accusamus? Reiciendis veniam rem, magnam placeat rerum odit id officia minus facilis inventore.
-                    Itaque voluptates quam voluptatum sed at temporibus.</p>
-                <a href="#" class="btn2">show more</a>
-            </div>
-            <div class="serItem" data-aos="fade-up" data-aos-duration="2000">
-                <div class="imgBx">
-                    <img src="img/card3.jpg" alt="service3">
-                    <p class="title">architecture</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis doloribus nemo at possimus
-                    optio quod error voluptatum sed laboriosam quam, expedita itaque vero ipsa ut quis natus veritatis
-                    et accusamus? Reiciendis veniam rem, magnam placeat rerum odit id officia minus facilis inventore.
-                    Itaque voluptates quam voluptatum sed at temporibus.</p>
-                <a href="#" class="btn2">show more</a>
-            </div>
-        </div>
-    </section>
-    <!-- Start Portfolio -->
-    <section class="portfolio">
-        <div class="textBx" data-aos="fade-down" data-aos-duration="2000">
-            <h2>made with love</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptatum nihil provident sunt fuga
-                autem in nisi, veniam sapiente praesentium quisquam, excepturi rem quidem cum consequuntur modi nam
-                expedita qui eius nobis quibusdam obcaecati iste cupiditate optio. Ea, ad exercitationem.</p>
-        </div>
-        <div class="categories" data-aos="fade-right" data-aos-duration="2000">
-            <button type="button" class="btn2 active" data-cont=".all">show all</button>
-            <button type="button" class="btn2" data-cont=".buildings">buildings</button>
-            <button type="button" class="btn2" data-cont=".interior">interior design</button>
-            <button type="button" class="btn2" data-cont=".isolation">isolation</button>
-            <button type="button" class="btn2" data-cont=".plumbing">plumbing</button>
-        </div>
-        <div class="container active all">
-            <div class="imgBx1" data-aos="zoom-in-up" data-aos-duration="2000">
-                <img src="img/gallery1.jpg" alt="gallery1">
-            </div>
-            <div class="imgBx2">
-                <img src="img/gallery2.jpg" alt="gallery1" data-aos="zoom-in-right" data-aos-duration="2000">
-                <img src="img/gallery3.jpg" alt="gallery2" data-aos="zoom-in-left" data-aos-duration="2000">
-                <img src="img/gallery4.jpg" alt="gallery3" data-aos="zoom-in-right" data-aos-duration="2000">
-                <img src="img/gallery5.jpg" alt="gallery4" data-aos="zoom-in-left" data-aos-duration="2000">
-            </div>
-        </div>
-        <div class="container buildings">
-            <div class="imgBx1" data-aos="zoom-in-up" data-aos-duration="2000">
-                <img src="img/gallery1.jpg" alt="gallery1">
-            </div>
-            <div class="imgBx2">
-                <img src="img/gallery2.jpg" alt="gallery1" data-aos="zoom-in-right" data-aos-duration="2000">
-                <img src="img/gallery3.jpg" alt="gallery2" data-aos="zoom-in-left" data-aos-duration="2000">
-            </div>
-        </div>
-        <div class="container interior">
-            <div class="imgBx1" data-aos="zoom-in-up" data-aos-duration="2000">
-                <img src="img/gallery1.jpg" alt="gallery1">
-            </div>
-            <div class="imgBx2">
-                <img src="img/gallery2.jpg" alt="gallery1" data-aos="zoom-in-right" data-aos-duration="2000">
-                <img src="img/gallery3.jpg" alt="gallery2" data-aos="zoom-in-left" data-aos-duration="2000">
-                <img src="img/gallery4.jpg" alt="gallery3" data-aos="zoom-in-right" data-aos-duration="2000">
-            </div>
-        </div>
-        <div class="container isolation">
-            <div class="imgBx1" data-aos="zoom-in-up" data-aos-duration="2000">
-                <img src="img/gallery1.jpg" alt="gallery1">
-            </div>
-            <div class="imgBx2">
-
-            </div>
-        </div>
-        <div class="container plumbing">
-            <div class="imgBx1" data-aos="zoom-in-up" data-aos-duration="2000">
-                <img src="img/gallery1.jpg" alt="gallery1">
-            </div>
-            <div class="imgBx2">
-                <img src="img/gallery2.jpg" alt="gallery1" data-aos="zoom-in-right" data-aos-duration="2000">
-            </div>
-        </div>
-        <div id="myModal" class="modal">
-            <span id="close">&times;</span>
-            <img class="modal-content" id="imgModal">
-        </div>
-    </section>
-    <!-- Start Testimonials -->
-    <section class="testim">
-        <div class="textBx" data-aos="fade-down" data-aos-duration="2000">
-            <h2>made with love</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptatum nihil provident sunt fuga
-                autem in nisi, veniam sapiente praesentium quisquam, excepturi rem quidem cum consequuntur modi nam
-                expedita qui eius nobis quibusdam obcaecati iste cupiditate optio. Ea, ad exercitationem.</p>
-        </div>
-        <div class="container">
-            <div class="testItem" data-aos="zoom-out-right" data-aos-duration="2000">
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda voluptate, impedit
-                        perferendis, eius neque iure fuga nemo repellat, vero tenetur sapiente laborum rerum! Itaque
-                        magni
-                        mollitia perferendis, odit et fugit enim ipsa reprehenderit incidunt earum tempora ut labore
-                        corporis, nisi odio eligendi? Fuga error tempora ipsam nihil soluta dolorem placeat corrupti
-                        unde,
-                        laudantium enim dolore obcaecati mollitia at maxime!</p>
-                </div>
-                <img src="img/block-ico2.png" alt="quote arrow">
-                <img src="img/block-ico1.png" alt="quote arro2">
-                <img src="img/cust1.png" alt="customer">
-                <h4>Mari Jean</h4>
-            </div>
-            <div class="testItem" data-aos="zoom-out-down" data-aos-duration="2000">
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda voluptate, impedit
-                        perferendis, eius neque iure fuga nemo repellat, vero tenetur sapiente laborum rerum! Itaque
-                        magni
-                        mollitia perferendis, odit et fugit enim ipsa reprehenderit incidunt earum tempora ut labore
-                        corporis, nisi odio eligendi? Fuga error tempora ipsam nihil soluta dolorem placeat corrupti
-                        unde,
-                        laudantium enim dolore obcaecati mollitia at maxime!</p>
-                </div>
-                <img src="img/block-ico2.png" alt="quote arrow">
-                <img src="img/block-ico1.png" alt="quote arrow2">
-                <img src="img/cust1.png" alt="customer">
-                <h4>Mari Jean</h4>
-            </div>
-            <div class="testItem" data-aos="zoom-out-left" data-aos-duration="2000">
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda voluptate, impedit
-                        perferendis, eius neque iure fuga nemo repellat, vero tenetur sapiente laborum rerum! Itaque
-                        magni
-                        mollitia perferendis, odit et fugit enim ipsa reprehenderit incidunt earum tempora ut labore
-                        corporis, nisi odio eligendi? Fuga error tempora ipsam nihil soluta dolorem placeat corrupti
-                        unde,
-                        laudantium enim dolore obcaecati mollitia at maxime!</p>
-                </div>
-                <img src="img/block-ico2.png" alt="quote arrow">
-                <img src="img/block-ico1.png" alt="quote arrow2">
-                <img src="img/cust1.png" alt="customer">
-                <h4>Mari Jean</h4>
-            </div>
-        </div>
-        <!-- Start Contact -->
-        <article class="contact">
-            <div class="container">
-                <div class="textBx" data-aos="fade-right" data-aos-duration="2000">
-                    <h2>do you have any questions?<br><span>feel free to contact us!</span></h2>
-                </div>
-                <div class="formBx">
-                    <form>
-                        <input type="text" name="name" id="name" placeholder="Name" data-aos="fade-down"
-                            data-aos-duration="2000">
-                        <input type="email" name="email" id="email" placeholder="Email" data-aos="fade-down"
-                            data-aos-duration="2000">
-                        <textarea name="message" id="message" cols="30" rows="2" placeholder="Message"
-                            data-aos="fade-up" data-aos-duration="2000"></textarea>
-                        <input type="submit" value="submit" class="btn2" data-aos="fade-up" data-aos-duration="2000">
-                    </form>
-                </div>
-            </div>
-        </article>
-    </section>
-
-    <!-- Start Footer -->
-    <section class="footer">
-        <article class="content">
-            <div class="container">
-                <div class="footItem footItem1" data-aos="fade-up" data-aos-duration="2000">
-                    <h3>about company</h3>
-                    <h3>Construction<br><span>Lorem ipsum is simply dummy text</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellat saepe aliquam, tenetur id
-                        officiis eum laudantium beatae ipsum quisquam deserunt ipsa sapiente voluptatem? Est, impedit
-                        quidem!</p>
-                    <div class="social">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footItem footItem2" data-aos="fade-up" data-aos-duration="2000">
-                    <h3>explore links</h3>
-                    <div class="links">
-                        <div>
-                            <span><i class="fas fa-caret-right"></i></span>
-                            <a href="#" target="_blank">our services</a>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-caret-right"></i></span>
-                            <a href="#" target="_blank">our services</a>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-caret-right"></i></span>
-                            <a href="#" target="_blank">our services</a>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-caret-right"></i></span>
-                            <a href="#" target="_blank">our services</a>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-caret-right"></i></span>
-                            <a href="#" target="_blank">our services</a>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-caret-right"></i></span>
-                            <a href="#" target="_blank">our services</a>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-caret-right"></i></span>
-                            <a href="#" target="_blank">our services</a>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-caret-right"></i></span>
-                            <a href="#" target="_blank">our services</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footItem footItem3" data-aos="fade-up" data-aos-duration="2000">
-                    <h3>latest posts</h3>
-                    <div class="links">
-                        <div>
-                            <span>20<br>AUG</span>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div>
-                            <span>20<br>AUG</span>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div>
-                            <span>20<br>AUG</span>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div>
-                            <span>20<br>AUG</span>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footItem footItem4" data-aos="fade-up" data-aos-duration="2000">
-                    <h3>contact us</h3>
-                    <div class="links">
-                        <div>
-                            <span><i class="fas fa-map-marker-alt"></i></span>i></span>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-envelope"></i></span>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-mobile"></i></span>
-                            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <div class="copyright">
-            Copyright &copy; 2021 | Designed By
-            <span>Ahmed Hafez</span>
-        </div>
-    </section>
-
+    
     <!-- Start TO TOP BUTTON -->
     <div id='toTop'>
         <i class="fas fa-angle-double-up fa-lg totop-icon" title="Go To Top"></i>
