@@ -1,0 +1,24 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sliderTrack = document.querySelector(".slider-track");
+    let scrollAmount = 0;
+    let direction = 1;
+
+    function autoScroll() {
+      if (!sliderTrack) return;
+
+      scrollAmount += 1 * direction;
+      sliderTrack.scrollLeft = scrollAmount;
+
+      // Reverse direction if we reach either end
+      if (
+        scrollAmount + sliderTrack.clientWidth >= sliderTrack.scrollWidth ||
+        scrollAmount <= 0
+      ) {
+        direction *= -1;
+      }
+    }
+
+    setInterval(autoScroll, 20); // Adjust speed here
+  });
+</script>
