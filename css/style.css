@@ -168,7 +168,7 @@ input.btn2:hover {
 /* -----------------
 Page Loader 
 --------------*/
-@keyframes pageloader {
+/* @keyframes pageloader {
 
     0% {
         transform: rotate(0);
@@ -219,13 +219,13 @@ Page Loader
     border-color: var(--mainColor) transparent var(--mainColor) transparent;
     animation: pageloader 1.2s infinite;
     -webkit-animation: pageloader 1.2s infinite;
-}
+}*/
 
 .container {
     max-width: 90%;
     margin: 0 auto;
     padding: 10px 0;
-}
+} 
 
 /* Start Tob Bar */
 .tobBar {
@@ -1706,3 +1706,7 @@ body[data-aos-duration="2000"] [data-aos] {
 }
 
 /* End Of Code :) */
+
+
+
+
