@@ -1059,9 +1059,35 @@ startAutoSlide();
 </section>
 
     <!-- Start TO TOP BUTTON -->
-    <div id='toTop'>
-        <i class="fas fa-angle-double-up fa-lg totop-icon" title="Go To Top"></i>
-    </div>
+    <!-- WhatsApp Floating Icon -->
+    <a href="https://wa.me/917908400439" target="_blank" id="whatsapp-float" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <style>
+        #whatsapp-float {
+            position: fixed;
+            right: 24px;
+            bottom: 32px;
+            z-index: 9999;
+            background: #25d366;
+            color: #fff;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+            font-size: 2rem;
+            transition: background 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+        #whatsapp-float:hover {
+            background: #1ebe57;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+            color: #fff;
+        }
+    </style>
     <!-- End Of Code :) -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/all.js"></script>
