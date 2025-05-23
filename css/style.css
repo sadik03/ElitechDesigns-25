@@ -354,7 +354,7 @@ nav .container .navLinks div a {
     display: block;
     color: var(--whiteColor);
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 14px;
     text-transform: capitalize;
     transition: color, background-color .3s ease;
     -webkit-transition: color, background-color .3s ease;
