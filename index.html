@@ -1686,7 +1686,7 @@ Designer</p>
     </div>
 </section>
 
-        <!-- Start TO TOP BUTTON -->
+       
         <!-- WhatsApp Floating Icon -->
         <a href="https://wa.me/917908400439" target="" id="whatsapp-float" title="Chat with us on WhatsApp">
             <i class="fab fa-whatsapp"></i>
@@ -1715,6 +1715,46 @@ Designer</p>
                 background: #1ebe57;
                 box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
                 color: #fff;
+            }
+        </style>
+
+        <!-- Call Floating Button -->
+        <a href="tel:+917908400439" id="call-float" title="Call Us">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <style>
+            #call-float {
+                position: fixed;
+                left: 24px;
+                bottom: 32px;
+                z-index: 9999;
+                background: #007bff;
+                color: #fff;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+                font-size: 2rem;
+                transition: background 0.2s, box-shadow 0.2s;
+                text-decoration: none;
+            }
+            #call-float:hover {
+                background: #0056b3;
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
+                color: #fff;
+            }
+            /* Prevent overlap with WhatsApp button on small screens */
+            @media (max-width: 600px) {
+                #call-float {
+                    left: 16px;
+                    bottom: 36px;
+                    width: 56px;
+                    height: 56px;
+                    font-size: 1.5rem;
+                }
             }
         </style>
         <!-- End Of Code :) -->
