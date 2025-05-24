@@ -676,7 +676,7 @@ body[data-aos-duration="2000"] [data-aos] {
     position: absolute;
     bottom: 0;
     left: 0;
-    text-align: center;
+    /* text-align: center; */
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     color: var(--whiteColor);
@@ -1484,7 +1484,7 @@ body[data-aos-duration="2000"] [data-aos] {
     }
 
     .services .container .serItem .imgBx .title {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .services .container .serItem .imgBx+p {

@@ -64,7 +64,8 @@
                 <i class="fas fa-bars"></i>
             </label>
             <div class="logo" style="display: flex; flex-direction: row; align-items: center;">
-                <img src="img/ELITECH logo.jpg" alt="Elitech Designs Logo" style="height:80px; margin-right:12px; ">
+                <img src="img/ELITECH logo.jpg" alt="Elitech Designs Logo"
+                    style="height:80px; margin-right:12px; ">
             </div>
             <style>
                 @media (max-width: 600px) {
@@ -141,42 +142,43 @@
                 style="flex: 1 1 350px; min-width: 260px; background: transparent; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 32px 24px; max-width: 400px; backdrop-filter: blur(6px);">
                 <h3 style="margin-bottom: 18px; color: #FFCB0F; font-size: 1.3em; font-weight: 600;">Request Free Tech
                     Consultation</h3>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <!-- Web3Forms Required Fields -->
-                    <input type="hidden" name="access_key" value="5fbd9683-1631-4aca-b3cc-192291d421b1">
-                    <input type="hidden" name="subject" value="New Consultation Request">
-                    <input type="hidden" name="redirect" value="https://www.elitechdesigns.com/">
-                    <input type="checkbox" name="botcheck" id="" style="display: none;">
-
+                <form>
                     <div class="inputBox" style="position: relative; margin-bottom: 14px;">
                         <input type="text" name="name" placeholder="Name" required
                             style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
+                        <label
+                            style="position: absolute; left: 12px; top: 12px; color: #888; font-size: 0.97em; pointer-events: none; transition: 0.2s;"></label>
                     </div>
-
                     <div class="inputBox" style="position: relative; margin-bottom: 14px;">
                         <input type="email" name="email" placeholder="Email" required
                             style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
+                        <label
+                            style="position: absolute; left: 12px; top: 12px; color: #888; font-size: 0.97em; pointer-events: none; transition: 0.2s;"></label>
                     </div>
-
                     <div class="inputBox" style="position: relative; margin-bottom: 14px;">
                         <input type="tel" name="phone" placeholder="Phone" required
                             style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
+                        <label
+                            style="position: absolute; left: 12px; top: 12px; color: #888; font-size: 0.97em; pointer-events: none; transition: 0.2s;"></label>
                     </div>
-
-                    <div class="inputBox" style="position: relative; margin-bottom: 14px;">
-                        <input type="text" name="city" placeholder="Enter City" required
-                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
+                    <div class="inputBox" style="margin-bottom: 14px;">
+                        <select name="state" required
+                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff; appearance: none; -webkit-appearance: none; -moz-appearance: none;">
+                            <option value="" disabled selected style="color: #bbb; background: #222;">Choose State
+                            </option>
+                            <option value="AL" style="color: #222; background: #fff;">Alabama</option>
+                            <option value="AK" style="color: #222; background: #fff;">Alaska</option>
+                            <!-- Add more states as needed -->
+                        </select>
                     </div>
-
                     <div class="inputBox" style="position: relative; margin-bottom: 16px;">
-                        <textarea name="project_details" placeholder="Project Details" required rows="4"
-                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff; resize: vertical;"></textarea>
+                        <input type="text" name="project_details" placeholder="Project Details" required
+                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
+                        <label
+                            style="position: absolute; left: 12px; top: 12px; color: #888; font-size: 0.97em; pointer-events: none; transition: 0.2s;"></label>
                     </div>
-
                     <button type="submit" class="btn"
-                        style="width: 100%; padding: 12px 0; border: none; border-radius: 5px; background: #f9b233; color: #fff; font-size: 1.1em; font-weight: 600; cursor: pointer; transition: background 0.2s;">
-                        Submit
-                    </button>
+                        style="width: 100%; padding: 12px 0; border: none; border-radius: 5px; background: #f9b233; color: #fff; font-size: 1.1em; font-weight: 600; cursor: pointer; transition: background 0.2s;">Submit</button>
                 </form>
             </div>
         </div>
@@ -301,54 +303,43 @@
             <div class="textBx" data-aos="fade-right" data-aos-duration="1000">
                 <h2>Welcome to ELITECH DESIGNS</h2>
 
-                <p style="text-align: justify;">At <strong>ELITECH DESIGNS</strong>, we don’t just build houses—we craft
-                    living spaces that embody your personality,
+                <p style="text-align: justify;">At <strong>ELITECH DESIGNS</strong>, we don’t just build houses—we craft living spaces that embody your personality,
                     aspirations, and lifestyle. As a trusted leader in home construction, water supply management, and
                     hydraulics design, we transform visions into reality with exceptional expertise, innovative design,
                     and an unwavering commitment to quality.<br>
-                    <strong>Precision in flow, strength in build</strong> —this philosophy drives everything we do. From
-                    designing modern
+                   <strong>Precision in flow, strength in build</strong> —this philosophy drives everything we do. From designing modern
                     retreats and cozy traditional homes to creating cutting-edge smart residences, we ensure every
                     project meets the highest standards of functionality and durability. Additionally, our expertise in
                     water supply management and hydraulics design enables us to develop sustainable, efficient
-                    infrastructure for both residential and commercial spaces.
-                </p>
-                <p style="text-align: justify;">With precision, passion, and dedication, we bring your dream home and
-                    functional designs to life.
-                    Welcome to <strong>ELITECH DESIGNS</strong> —where innovation meets craftsmanship, and your vision
-                    becomes our
+                    infrastructure for both residential and commercial spaces.</p>
+                <p style="text-align: justify;">With precision, passion, and dedication, we bring your dream home and functional designs to life.
+                    Welcome to <strong>ELITECH DESIGNS</strong> —where innovation meets craftsmanship, and your vision becomes our
                     mission. </p>
                 <!-- <a href="#" class="btn2">show more</a> -->
             </div>
-            <div class="videoBx" data-aos="fade-left" data-aos-duration="1000"
-                style="display: flex; align-items: center; justify-content: center;">
-                <video width="450" height="480"
-                    style="max-width: 900px; border-radius: 16px; box-shadow: 0 6px 32px rgba(0,0,0,0.14); background: #000;"
-                    autoplay loop muted controls>
+            <div class="videoBx" data-aos="fade-left" data-aos-duration="1000" style="display: flex; align-items: center; justify-content: center;">
+                <video width="450" height="480" style="max-width: 900px; border-radius: 16px; box-shadow: 0 6px 32px rgba(0,0,0,0.14); background: #000;" autoplay loop muted controls>
                     <source src="img/video/videoplayback.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <style>
-                @media (max-width: 900px) {
-
-                    .videoBx video,
-                    .videoBx iframe {
-                        max-width: 100% !important;
-                        height: 236px !important;
-                        border-radius: 12px !important;
-                    }
+            @media (max-width: 900px) {
+                .videoBx video,
+                .videoBx iframe {
+                    max-width: 100% !important;
+                    height: 236px !important;
+                    border-radius: 12px !important;
                 }
-
-                @media (max-width: 600px) {
-
-                    .videoBx video,
-                    .videoBx iframe {
-                        width: 100% !important;
-                        height: 180px !important;
-                        border-radius: 10px !important;
-                    }
+            }
+            @media (max-width: 600px) {
+                .videoBx video,
+                .videoBx iframe {
+                    width: 100% !important;
+                    height: 180px !important;
+                    border-radius: 10px !important;
                 }
+            }
             </style>
         </div>
     </section>
@@ -356,7 +347,7 @@
 
 
 
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <!-- ------------------------------------------------------------------------------------------------------------------>
 
 
     <!-- Start Features -->
@@ -364,8 +355,7 @@
         <div class="container">
             <div class="textBx" data-aos="fade-down" data-aos-duration="2000">
                 <h2>why choose us?</h2>
-                <p style="text-align: justify;"> With the help of our skilled staff and easy process, we turn your home
-                    building visions into reality.
+                <p style="text-align: justify;"> With the help of our skilled staff and easy process, we turn your home building visions into reality.
                     We guarantee quality and transparency at every stage, from design to delivery. Our goal is to create
                     houses that are a true reflection of your vision, using cutting-edge technology and excellent
                     craftsmanship. Elitech Designs is among the top companies to provide efficient services related to
@@ -373,7 +363,7 @@
                     across the globe. Elitech Designs boasts of clientele not only in India but also overseas. Elitech
                     Designs is known for its holistic approach in handling customer’s projects. We believe that
                     efficient Water System Designs and Water Distribution System Designs should provide consumers with
-                    enough hot and cold water at the desired locations at all points at a same time.</p>
+                    enough hot and cold water at the desired locations at all points at a same time.</p>
             </div>
 
             <div class="featItem" data-aos="flip-left" data-aos-duration="2000">
@@ -413,214 +403,51 @@
 
     <!-- over Features -->
 
-    <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ------------------------------------------------------------------------------------------------------------------>
 
     <!-- Start Services -->
     <section class="services" id="service">
-         <div style="width:auto; display:flex; flex-direction:column; align-items:center; margin-bottom:32px;"></div>
-                <h2 data-aos="fade-down" data-aos-duration="1000" style="justify-content: center;">Our Services</h2>
-            </div>
+        <h2 data-aos="fade-down" data-aos-duration="1000">our services</h2>
         <div class="container">
-           
-            <div class="services-cards">
-                <!-- Card 1 -->
-                <div class="service-card" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="service-img">
-                        <img src="img/card1.jpg" alt="Construction Management">
-                    </div>
-                    <h3>Construction Management</h3>
-                    <p>
-                        We handle the complexities so you don’t have to. Our team offers end-to-end project oversight,
-                        coordinating contractors, timelines, and budgets with precision. Through real-time updates and
-                        proactive risk management, we ensure your project stays on schedule, within budget, and aligned
-                        with your vision.
-                    </p>
-                    <a class="btn2">Show More</a>
+            <div class="serItem" data-aos="fade-up" data-aos-duration="2000">
+                <div class="imgBx">
+                    <img src="img/card1.jpg" alt="service1">
+                    <p class="title">Construction Management</p>
                 </div>
-                <!-- Card 2 -->
-                <div class="service-card" data-aos="fade-up" data-aos-duration="1400">
-                    <div class="service-img">
-                        <img src="img/services/serv2.png" alt="Planning & Design">
-                    </div>
-                    <h3>Planning & Design</h3>
-                    <p style="text-align: justify;">At Elitech Designs, we offer comprehensive civil engineering
-                        solutions, ensuring precision, efficiency, and innovation in every project. Our expertise
-                        includes:</p>
-                    <ul>
-                        <li><strong>Building Planning:</strong> Thoughtfully designed layouts that balance
-                            functionality, aesthetics, and compliance.</li>
-                        <li><strong>Structural Design:</strong> Robust structural solutions optimized for safety,
-                            durability, and industry standards.</li>
-                        <li><strong>Estimation:</strong> Accurate cost assessments to support budget planning and
-                            resource allocation.</li>
-                        <li><strong>DPR:</strong> In-depth documentation for project feasibility, execution, and
-                            approval.</li>
-                        <li><strong>Execution:</strong> Seamless project implementation, ensuring quality and efficiency
-                            at every stage.</li>
-                        <li><strong>Consultancy:</strong> Expert guidance and strategic insights tailored to your
-                            engineering challenges.</li>
-                    </ul>
-                    <a class="btn2">Show More</a>
+                <p>We handle the complexities so you don’t have to. Our team offers end-to-end project oversight,
+                    coordinating contractors, timelines, and budgets with military precision. Through real-time updates
+                    and proactive risk management, we ensure your project stays on schedule, within budget, and aligned
+                    with your vision—turning logistical challenges into seamless execution.</p>
+                <a  class="btn2">show more</a>
+            </div>
+            <div class="serItem" data-aos="fade-up" data-aos-duration="2000">
+                <div class="imgBx">
+                    <img src="img/card2.jpg" alt="service2">
+                    <p class="title">renovation</p>
                 </div>
-                <!-- Card 3 -->
-                <div class="service-card" data-aos="fade-up" data-aos-duration="1600">
-                    <div class="service-img">
-                        <img src="img/water.jpg" alt="Water Supply Management">
-                    </div>
-                    <h3>Water Supply Management</h3>
-                    <p>Our Specialized Hydraulic Engineering Services
-                        At Elitech Designs, we deliver advanced hydraulic solutions tailored for efficiency,
-                        sustainability, and reliability. Our expertise includes:</p>
-                    <ul>
-                        <li><strong>Hydraulics Design:</strong> Optimized engineering for fluid flow and pressure management</li>
-                        <li><strong>Water Treatment:</strong> Sustainable treatment solutions ensuring clean and safe water supply.</li>
-                        <li><strong>Rising Main Design:</strong> Engineered pipelines for efficient water transmission across diverse infrastructures.</li>
-                        <li><strong>Distribution Network:</strong> Strategic planning for reliable, balanced water supply systems.</li>
-                        <li><strong>Surge Analysis:</strong>  Comprehensive assessments to mitigate pressure fluctuations and protect pipeline integrity.</li>
-                        <li><strong>Iron Elimination:</strong> Advanced solutions for effective removal of iron contaminants from water sources..</li>
-                    </ul>
-                    <a class="btn2">Show More</a>
+                <p>Breathe new life into your space. Whether modernizing a heritage home or reimagining a tired layout,
+                    we blend innovative design with structural expertise. Our renovation services prioritize preserving
+                    character while enhancing functionality, using sustainable materials and smart spatial solutions to
+                    create homes that feel both fresh and timeless.</p>
+                <a  class="btn2">show more</a>
+            </div>
+            <div class="serItem" data-aos="fade-up" data-aos-duration="2000">
+                <div class="imgBx">
+                    <img src="img/card3.jpg" alt="service3">
+                    <p class="title">architecture</p>
                 </div>
-                <!-- Card 4 -->
-                <div class="service-card" data-aos="fade-up" data-aos-duration="1800">
-                    <div class="service-img">
-                        <img src="img/card3.jpg" alt="Architecture">
-                    </div>
-                    <h3>Architecture</h3>
-                    <p>
-                        Where imagination meets precision. Our architects craft spaces that tell your story, balancing
-                        creativity with technical mastery. From sketches to blueprints, we design homes that harmonize
-                        aesthetics, sustainability, and livability—ensuring every detail reflects your lifestyle.
-                    </p>
-                    <a class="btn2">Show More</a>
-                </div>
+                <p>Where imagination meets precision. Our architects craft spaces that tell your story, balancing bold
+                    creativity with technical mastery. From initial sketches to permit-ready blueprints, we design homes
+                    that harmonize aesthetics, sustainability, and livability—ensuring every curve, line, and material
+                    choice reflects your lifestyle..</p>
+                <a  class="btn2">show more</a>
             </div>
         </div>
-        <style>
-            .services-cards {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 32px;
-            }
-
-            .service-card {
-                background: #fff;
-                border-radius: 14px;
-                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-                padding: 28px 18px 22px 18px;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                min-height: 420px;
-                transition: box-shadow 0.2s;
-            }
-
-            .service-card:hover {
-                box-shadow: 0 6px 28px rgba(249, 178, 51, 0.13);
-            }
-
-            .service-img {
-                width: 100%;
-                text-align: center;
-                margin-bottom: 18px;
-            }
-
-            .service-img img {
-                width: 110px;
-                height: 110px;
-                object-fit: cover;
-                border-radius: 12px;
-                margin-bottom: 8px;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-                background: #f9f9f9;
-            }
-
-            .service-card h3 {
-                color: #f9b233;
-                font-size: 1.18em;
-                font-weight: 600;
-                margin-bottom: 10px;
-                margin-top: 0;
-            }
-
-            .service-card p,
-            .service-card ul {
-                font-size: 0.98em;
-                color: #444;
-                margin-bottom: 10px;
-            }
-
-            .service-card ul {
-                margin: 0 0 10px 18px;
-                padding: 0;
-                list-style: disc inside;
-            }
-
-            .service-card .btn2 {
-                margin-top: auto;
-                align-self: flex-end;
-            }
-
-            /* Responsive Styles */
-            @media (max-width: 1200px) {
-                .services-cards {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-
-                .service-card {
-                    min-height: 0;
-                }
-            }
-
-            @media (max-width: 900px) {
-                .services-cards {
-                    gap: 20px;
-                }
-
-                .service-img img {
-                    width: 90px;
-                    height: 90px;
-                }
-            }
-
-            @media (max-width: 700px) {
-                .services-cards {
-                    grid-template-columns: 1fr;
-                    gap: 16px;
-                }
-
-                .service-card {
-                    padding: 18px 10px 14px 10px;
-                    font-size: 0.97em;
-                }
-
-                .service-img img {
-                    width: 80px;
-                    height: 80px;
-                }
-            }
-
-            @media (max-width: 480px) {
-                .service-card h3 {
-                    font-size: 1em;
-                }
-
-                .service-card p,
-                .service-card ul {
-                    font-size: 0.93em;
-                }
-
-                .service-img img {
-                    width: 360px;
-                    height: 220px;
-                }
-            }
-        </style>
     </section>
 
     <!-- over Services -->
 
-    <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ------------------------------------------------------------------------------------------------------------------>
     <!-- Start Portfolio -->
     <section class="portfolio" id="portfolio">
         <div class="textBx" data-aos="fade-down" data-aos-duration="2000">
@@ -649,7 +476,7 @@
                 <img src="img/new/shw6.JPG" alt="gallery1">
             </div>
             <div class="imgBx2">
-                <img src="img/new/shw7.JPG" alt="gallery1" data-aos="zoom-in-right" data-aosduration="2000">
+                <img src="img/new/shw7.JPG" alt="gallery1" data-aos="zoom-in-right" data-aos-duration="2000">
                 <img src="img/new/shw8.jpeg" alt="gallery2" data-aos="zoom-in-left" data-aos-duration="2000">
                 <img src="img/new/shw9.jpeg" alt="gallery3" data-aos="zoom-in-right" data-aos-duration="2000">
                 <img src="img/new/shw10.jpeg" alt="gallery4" data-aos="zoom-in-left" data-aos-duration="2000">
@@ -663,7 +490,6 @@
                 <img src="img/new/shw12.jpeg" alt="gallery1" data-aos="zoom-in-right" data-aos-duration="2000">
                 <img src="img/new/shw13.jpeg" alt="gallery2" data-aos="zoom-in-left" data-aos-duration="2000">
                 <img src="img/new/shw14.jpeg" alt="gallery3" data-aos="zoom-in-right" data-aos-duration="2000">
-                <img src="img/port1.jpeg" alt="gallery4" data-aos="zoom-in-right" data-aos-duration="2000">
             </div>
         </div>
 
@@ -676,7 +502,7 @@
 
     <!-- over Portfolio -->
 
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ------------------------------------------------------------------------------------------------------------------>
 
     <!--start slider-->
 
@@ -720,8 +546,8 @@
             background: #fff;
             border-radius: 8px;
             width: 100%;
-            /* Ensure card ta360s full width */
-            heig220: auto;
+            /* Ensure card takes full width */
+            height: auto;
             /* Allow height to adjust based on content */
             display: flex;
             flex-direction: column;
@@ -945,7 +771,7 @@
         <!--over slider-->
 
 
-        <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- ------------------------------------------------------------------------------------------------------------------>
 
         <!-- Start Testimonials -->
         <section class="testim" id="Testimonials">
@@ -1253,176 +1079,31 @@
             // Start auto-slide on load
             startAutoSlide();
         </script>
-
-        <!-- over Testimonials -->
-
-
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-        <!-- Start founder -->
-        <section class="founders" id="founders">
-            <div class="container"
-                style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; justify-content: center;">
-                <div class="textBx" data-aos="fade-right" data-aos-duration="2000"
-                    style="flex: 1 1 120px; min-width: 220px;">
-                    <h2>Meet Our Founders</h2>
-                    <p style="font-size: 1.05em; color: #555; margin-bottom: 20px;">
-                        The visionaries behind <strong>ELITECH DESIGNS</strong> bring decades of expertise, innovation,
-                        and leadership to the construction and engineering industry. Their dedication drives our mission
-                        to deliver excellence in every project.
-                    </p>
+        <!-- Start Contact -->
+        <article class="contact" id="contact">
+            <div class="container">
+                <div class="textBx" data-aos="fade-right" data-aos-duration="2000">
+                    <h2>do you have any questions?<br><span>feel free to contact us!</span></h2>
                 </div>
-                <!-- Founder Card -->
-                <div class="founder-card" data-aos="fade-up" data-aos-duration="1200">
-                    <h3 class="founder-name">Samim Ansary</h3>
-                    <p class="founder-role">Founder</p>
-                    <p class="founder-desc">
-                        With over the years of experience in planning and hydraulics design, Samim Ansary leads the team
-                        with a passion for innovation and quality. His vision shapes the future of Elitech Designs.
-                    </p>
-                    <div class="founder-social">
-                        <a title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a title="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <!-- Co-Founder Card -->
-                <div class="founder-card" data-aos="fade-up" data-aos-duration="1400">
-                    <h3 class="founder-name">Taslima Nasrin</h3>
-                    <p class="founder-role">Co-Founder</p>
-                    <p class="founder-desc">
-                        As co-founder, Taslima Nasrin brings expertise in environmental engineering and sustainable
-                        solutions, ensuring every project is efficient and eco-friendly.
-                    </p>
-                    <div class="founder-social">
-                        <a title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a title="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
+                <div class="formBx">
+                    <form>
+                        <input type="text" name="name" id="name" placeholder="Name" data-aos="fade-down"
+                            data-aos-duration="2000">
+                        <input type="email" name="email" id="email" placeholder="Email" data-aos="fade-down"
+                            data-aos-duration="2000">
+                        <textarea name="message" id="message" cols="30" rows="2" placeholder="Message"
+                            data-aos="fade-up" data-aos-duration="2000"></textarea>
+                        <input type="submit" value="submit" class="btn2" data-aos="fade-up" data-aos-duration="2000">
+                    </form>
                 </div>
             </div>
-            <style>
-                .founders {
-                    background: linear-gradient(135deg, #fafbfc 0%, #f9f9f9 100%);
-                    padding: 48px 0 24px 0;
-                }
-
-                .founders .container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 32px;
-                    align-items: flex-start;
-                    justify-content: center;
-                }
-
-                .founder-card {
-                    background: #fff;
-                    border-radius: 14px;
-                    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
-                    padding: 28px 18px 22px 18px;
-                    max-width: 340px;
-                    min-width: 220px;
-                    width: 100%;
-                    text-align: center;
-                    margin-bottom: 16px;
-                    transition: box-shadow 0.2s;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                .founder-card:hover {
-                    box-shadow: 0 6px 28px rgba(249, 178, 51, 0.13);
-                }
-
-                .founder-name {
-                    margin-bottom: 7px;
-                    color: #222;
-                    font-size: 1.18em;
-                    font-weight: 600;
-                }
-
-                .founder-role {
-                    color: #f9b233;
-                    font-weight: 600;
-                    margin-bottom: 10px;
-                    font-size: 1em;
-                }
-
-                .founder-desc {
-                    font-size: 0.97em;
-                    color: #666;
-                    margin-bottom: 16px;
-                }
-
-                .founder-social {
-                    display: flex;
-                    gap: 14px;
-                    justify-content: center;
-                }
-
-                .founder-social a {
-                    color: #f9b233;
-                    font-size: 1.15em;
-                    transition: color 0.2s;
-                }
-
-                .founder-social a:hover {
-                    color: #222;
-                }
-
-                @media (max-width: 900px) {
-                    .founders .container {
-                        flex-direction: column;
-                        align-items: stretch !important;
-                        gap: 18px !important;
-                    }
-
-                    .founder-card {
-                        margin: 0 auto 18px auto;
-                        max-width: 98vw;
-                    }
-                }
-
-                @media (max-width: 600px) {
-                    .founders {
-                        padding: 28px 0 10px 0;
-                    }
-
-                    .founders .container {
-                        gap: 10px !important;
-                        padding: 0 4vw;
-                    }
-
-                    .textBx {
-                        min-width: 0 !important;
-                        padding: 0 2px !important;
-                    }
-
-                    .founder-card {
-                        padding: 18px 8px 14px 8px;
-                        font-size: 0.97em;
-                    }
-
-                    .founder-name {
-                        font-size: 1.05em;
-                    }
-
-                    .founder-role {
-                        font-size: 0.98em;
-                    }
-
-                    .founder-desc {
-                        font-size: 0.93em;
-                    }
-                }
-            </style>
+        </article>
         </section>
 
         <!-- over Testimonials -->
 
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
+        <!-- ------------------------------------------------------------------------------------------------------------------>
+      
         <!--start our team-->
         <div
             style="font-family: 'Montserrat', sans-serif; color: #8d97ad; padding: 5rem 0; background: linear-gradient(135deg, #f8f9fa 0%, #e8f1ff 100%); position: relative; overflow: hidden;">
@@ -1460,17 +1141,17 @@
                             style="flex: 0 0 320px; background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
                             <div style="text-align: center; position: relative;">
                                 <div style="position: relative; display: inline-block;">
-                                    <img src="img/team/sar.jpg" alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
+                                    <img src="img/team/sar.jpg"
+                                        alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
                          border: 4px solid #fff; box-shadow: 0 10px 30px rgba(9, 132, 227, 0.2);
                          transition: transform 0.3s ease;">
-
+                                  
                                 </div>
                                 <h4 style="color: #2d3436; margin: 0 0 0.5rem; font-weight: 700; font-size: 1.4rem;">
                                     Mr. Md. Sartaz Ansary </h4>
                                 <p style="background: linear-gradient(45deg, #0984e3, #6c5ce7); -webkit-background-clip: text; 
-               -webkit-text-fill-color: transparent; margin: 0 0 1.5rem; font-weight: 600; font-size: 1rem;">Project
-                                    Coordinator, Planning & Hydraulics
-                                    Designer</p>
+               -webkit-text-fill-color: transparent; margin: 0 0 1.5rem; font-weight: 600; font-size: 1rem;">Project Coordinator, Planning & Hydraulics
+Designer</p>
                                 <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; color: #636e72; position: relative; 
                padding-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.1);">
                                     "Bringing 12+ years of luxury real estate experience to find your perfect property
@@ -1478,19 +1159,19 @@
                                 </p>
                                 <div class="social-links"
                                     style="display: flex; gap: 1.2rem; justify-content: center; margin-top: 1.5rem;">
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-facebook-f"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-linkedin-in"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-instagram"
@@ -1500,22 +1181,23 @@
                             </div>
                         </div>
 
-                        <!-- Team Member 2 -->
+                          <!-- Team Member 2 -->
 
                         <div class="team-card"
                             style="flex: 0 0 320px; background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
                             <div style="text-align: center; position: relative;">
                                 <div style="position: relative; display: inline-block;">
-                                    <img src="img/team/Sakib.jpeg" alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
+                                    <img src="img/team/Sakib.jpeg"
+                                        alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
                          border: 4px solid #fff; box-shadow: 0 10px 30px rgba(9, 132, 227, 0.2);
                          transition: transform 0.3s ease;">
-
+                                
                                 </div>
                                 <h4 style="color: #2d3436; margin: 0 0 0.5rem; font-weight: 700; font-size: 1.4rem;">
-                                    Mr. Sakib Sarwar</h4>
+                                   Mr. Sakib Sarwar</h4>
                                 <p style="background: linear-gradient(45deg, #0984e3, #6c5ce7); -webkit-background-clip: text; 
                -webkit-text-fill-color: transparent; margin: 0 0 1.5rem; font-weight: 600; font-size: 1rem;">
-                                    Environmental Engineer</p>
+                                   Environmental Engineer</p>
                                 <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; color: #636e72; position: relative; 
                padding-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.1);">
                                     "Bringing 12+ years of luxury real estate experience to find your perfect property
@@ -1523,19 +1205,19 @@
                                 </p>
                                 <div class="social-links"
                                     style="display: flex; gap: 1.2rem; justify-content: center; margin-top: 1.5rem;">
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-facebook-f"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-linkedin-in"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-instagram"
@@ -1544,7 +1226,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Team Member 3 -->
+                          <!-- Team Member 3 -->
                         <!-- <div class="team-card"
                             style="flex: 0 0 320px; background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
                             <div style="text-align: center; position: relative;">
@@ -1591,21 +1273,22 @@
                             </div>
                         </div> -->
 
-                        <!-- Team Member 4 -->
+                          <!-- Team Member 4 -->
                         <div class="team-card"
                             style="flex: 0 0 320px; background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
                             <div style="text-align: center; position: relative;">
                                 <div style="position: relative; display: inline-block;">
-                                    <img src="img/team/Zeeshan.JPG" alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
+                                    <img src="img/team/Zeeshan.JPG"
+                                        alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
                          border: 4px solid #fff; box-shadow: 0 10px 30px rgba(9, 132, 227, 0.2);
                          transition: transform 0.3s ease;">
-
+                           
                                 </div>
                                 <h4 style="color: #2d3436; margin: 0 0 0.5rem; font-weight: 700; font-size: 1.4rem;">
                                     Mr. Zeeshan Ahmed</h4>
                                 <p style="background: linear-gradient(45deg, #0984e3, #6c5ce7); -webkit-background-clip: text; 
                -webkit-text-fill-color: transparent; margin: 0 0 1.5rem; font-weight: 600; font-size: 1rem;">Draftsman
-                                </p>
+                                    </p>
                                 <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; color: #636e72; position: relative; 
                padding-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.1);">
                                     "Bringing 12+ years of luxury real estate experience to find your perfect property
@@ -1613,19 +1296,19 @@
                                 </p>
                                 <div class="social-links"
                                     style="display: flex; gap: 1.2rem; justify-content: center; margin-top: 1.5rem;">
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-facebook-f"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-linkedin-in"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-instagram"
@@ -1634,22 +1317,23 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Team Member 5 -->
+                          <!-- Team Member 5 -->
 
                         <div class="team-card"
                             style="flex: 0 0 320px; background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
                             <div style="text-align: center; position: relative;">
                                 <div style="position: relative; display: inline-block;">
-                                    <img src="img/team/Sarim.jpeg" alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
+                                    <img src="img/team/Sarim.jpeg"
+                                        alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
                          border: 4px solid #fff; box-shadow: 0 10px 30px rgba(9, 132, 227, 0.2);
                          transition: transform 0.3s ease;">
-
+                  
                                 </div>
                                 <h4 style="color: #2d3436; margin: 0 0 0.5rem; font-weight: 700; font-size: 1.4rem;">
-                                    Mr. Sarim Dawar</h4>
+                                   Mr. Sarim Dawar</h4>
                                 <p style="background: linear-gradient(45deg, #0984e3, #6c5ce7); -webkit-background-clip: text; 
                -webkit-text-fill-color: transparent; margin: 0 0 1.5rem; font-weight: 600; font-size: 1rem;">Estimator
-                                </p>
+                                    </p>
                                 <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; color: #636e72; position: relative; 
                padding-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.1);">
                                     "Bringing 12+ years of luxury real estate experience to find your perfect property
@@ -1657,19 +1341,19 @@
                                 </p>
                                 <div class="social-links"
                                     style="display: flex; gap: 1.2rem; justify-content: center; margin-top: 1.5rem;">
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-facebook-f"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-linkedin-in"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a  style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-instagram"
@@ -1678,22 +1362,23 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Team Member 6 -->
+                          <!-- Team Member 6 -->
 
-                        <div class="team-card"
+                          <div class="team-card"
                             style="flex: 0 0 320px; background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
                             <div style="text-align: center; position: relative;">
                                 <div style="position: relative; display: inline-block;">
-                                    <img src="img/team/Arup.jpg" alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
+                                    <img src="img/team/Arup.jpg"
+                                        alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
                          border: 4px solid #fff; box-shadow: 0 10px 30px rgba(9, 132, 227, 0.2);
                          transition: transform 0.3s ease;">
-
+                                   
                                 </div>
                                 <h4 style="color: #2d3436; margin: 0 0 0.5rem; font-weight: 700; font-size: 1.4rem;">
                                     Mr. Arup Kr. Mahato</h4>
                                 <p style="background: linear-gradient(45deg, #0984e3, #6c5ce7); -webkit-background-clip: text; 
                -webkit-text-fill-color: transparent; margin: 0 0 1.5rem; font-weight: 600; font-size: 1rem;">HR
-                                </p>
+                                    </p>
                                 <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; color: #636e72; position: relative; 
                padding-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.1);">
                                     "Bringing 12+ years of luxury real estate experience to find your perfect property
@@ -1723,21 +1408,21 @@
                             </div>
                         </div>
 
-                        <div class="team-card"
+                         <div class="team-card"
                             style="flex: 0 0 320px; background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
                             <div style="text-align: center; position: relative;">
                                 <div style="position: relative; display: inline-block;">
-                                    <img src="img/team/Pollab.jpeg" alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
+                                    <img src="img/team/Pollab.jpeg"
+                                        alt="Team Member" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; 
                          border: 4px solid #fff; box-shadow: 0 10px 30px rgba(9, 132, 227, 0.2);
                          transition: transform 0.3s ease;">
-
+                                   
                                 </div>
                                 <h4 style="color: #2d3436; margin: 0 0 0.5rem; font-weight: 700; font-size: 1.4rem;">
                                     Mr. Pollab Dutta</h4>
                                 <p style="background: linear-gradient(45deg, #0984e3, #6c5ce7); -webkit-background-clip: text; 
-               -webkit-text-fill-color: transparent; margin: 0 0 1.5rem; font-weight: 600; font-size: 1rem;">Surveyor
-                                    Head
-                                </p>
+               -webkit-text-fill-color: transparent; margin: 0 0 1.5rem; font-weight: 600; font-size: 1rem;">Surveyor Head
+                                    </p>
                                 <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; color: #636e72; position: relative; 
                padding-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.1);">
                                     "Bringing 12+ years of luxury real estate experience to find your perfect property
@@ -1767,9 +1452,16 @@
                             </div>
                         </div>
 
+                        
+                        <!--team 7-->
 
-                 
 
+                       
+
+                        <!--team8-->
+
+
+                       
                     </div>
 
                     <!-- Navigation Arrows -->
@@ -1792,13 +1484,18 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                // Social icon hover effects
+
+
+                // Previous JavaScript code with additional hover effects
+
+                // Add hover effects to social icons
                 document.querySelectorAll('.social-links a').forEach(link => {
                     link.addEventListener('mouseenter', () => {
                         link.style.transform = 'translateY(-3px)';
                         link.style.background = 'linear-gradient(45deg, #0984e3, #6c5ce7)';
                         link.querySelector('i').style.color = 'white';
                     });
+
                     link.addEventListener('mouseleave', () => {
                         link.style.transform = 'translateY(0)';
                         link.style.background = '#f8f9fa';
@@ -1806,244 +1503,190 @@
                     });
                 });
 
-                // Arrow hover effects
+                // Add hover effect to arrows
                 document.querySelectorAll('.slider-arrow').forEach(arrow => {
                     arrow.addEventListener('mouseenter', () => {
                         arrow.style.background = 'linear-gradient(45deg, #0984e3, #6c5ce7)';
                         arrow.style.color = 'white';
                         arrow.style.transform = 'translateY(-50%) scale(1.1)';
                     });
+
                     arrow.addEventListener('mouseleave', () => {
                         arrow.style.background = 'white';
                         arrow.style.color = '#2d3436';
                         arrow.style.transform = 'translateY(-50%) scale(1)';
                     });
                 });
+            });
 
-                // Team slider logic
+            document.addEventListener('DOMContentLoaded', () => {
                 const sliderTrack = document.querySelector('.slider-track');
-                const teamCards = Array.from(document.querySelectorAll('.team-card'));
-                const cardGap = 40; // 2.5rem gap
-                let cardWidth = teamCards[0].offsetWidth + cardGap;
-                let totalCards = teamCards.length;
+                const teamCards = document.querySelectorAll('.team-card');
+                const cardWidth = teamCards[0].offsetWidth + 40; // includes 2.5rem gap
 
-                // Clone all cards for seamless infinite scroll
-                teamCards.forEach(card => {
-                    const clone = card.cloneNode(true);
+                // Clone the first few cards (e.g., first 3)
+                for (let i = 0; i < 3; i++) {
+                    const clone = teamCards[i].cloneNode(true);
                     sliderTrack.appendChild(clone);
-                });
+                }
 
                 let scrollPosition = 0;
-                let isAutoSliding = true;
-                let autoSlideTimer;
 
-                function updateCardWidth() {
-                    cardWidth = teamCards[0].offsetWidth + cardGap;
-                }
-
-                function slideTo(position, smooth = true) {
-                    sliderTrack.scrollTo({
-                        left: position,
-                        behavior: smooth ? 'smooth' : 'auto'
-                    });
-                }
-
-                function nextSlide() {
-                    updateCardWidth();
+                function autoSlide() {
                     scrollPosition += cardWidth;
-                    if (scrollPosition >= totalCards * cardWidth) {
-                        slideTo(scrollPosition, true);
+                    sliderTrack.scrollTo({
+                        left: scrollPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Reset after the last real slide
+                    if (scrollPosition >= (teamCards.length * cardWidth)) {
                         setTimeout(() => {
+                            sliderTrack.scrollTo({ left: 0, behavior: 'auto' });
                             scrollPosition = 0;
-                            slideTo(scrollPosition, false);
-                        }, 400); // match smooth scroll duration
-                    } else {
-                        slideTo(scrollPosition, true);
+                        }, 600); // Delay should match scroll `behavior: 'smooth'` duration
                     }
                 }
 
-                function prevSlide() {
-                    updateCardWidth();
-                    if (scrollPosition === 0) {
-                        scrollPosition = totalCards * cardWidth;
-                        slideTo(scrollPosition, false);
-                    }
-                    scrollPosition -= cardWidth;
-                    slideTo(scrollPosition, true);
-                }
+                // Start auto sliding
+                setInterval(autoSlide, 3000);
 
-                function startAutoSlide() {
-                    autoSlideTimer = setInterval(() => {
-                        if (isAutoSliding) nextSlide();
-                    }, 3000);
-                }
-
-                function stopAutoSlide() {
-                    clearInterval(autoSlideTimer);
-                }
-
-                // Arrow controls
+                // Arrow support
                 document.querySelector('.slider-arrow.next').addEventListener('click', () => {
-                    stopAutoSlide();
-                    nextSlide();
-                    startAutoSlide();
+                    autoSlide();
                 });
+
                 document.querySelector('.slider-arrow.prev').addEventListener('click', () => {
-                    stopAutoSlide();
-                    prevSlide();
-                    startAutoSlide();
+                    scrollPosition -= cardWidth;
+                    if (scrollPosition < 0) {
+                        scrollPosition = teamCards.length * cardWidth;
+                        sliderTrack.scrollTo({ left: scrollPosition, behavior: 'auto' });
+                    }
+                    sliderTrack.scrollTo({ left: scrollPosition, behavior: 'smooth' });
                 });
-
-                // Pause on hover
-                sliderTrack.addEventListener('mouseenter', () => { isAutoSliding = false; });
-                sliderTrack.addEventListener('mouseleave', () => { isAutoSliding = true; });
-
-                // Responsive: update cardWidth on resize
-                window.addEventListener('resize', updateCardWidth);
-
-                // Touch swipe support
-                let startX = 0;
-                sliderTrack.addEventListener('touchstart', e => {
-                    startX = e.touches[0].clientX;
-                    stopAutoSlide();
-                });
-                sliderTrack.addEventListener('touchend', e => {
-                    let endX = e.changedTouches[0].clientX;
-                    if (endX - startX > 40) prevSlide();
-                    else if (startX - endX > 40) nextSlide();
-                    startAutoSlide();
-                });
-
-                // Initialize
-                slideTo(0, false);
-                startAutoSlide();
             });
+
+
         </script>
 
         <!--over our team-->
-
-
-        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------>
 
         <!-- Start Footer -->
-        <section
-            style="background: linear-gradient(145deg, #1a1a1a, #2d2d2d); color: #fff; padding: 60px 0 0 0; border-top: 5px solid #ff9900;">
-            <article style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-                <div style="display: flex; flex-wrap: wrap; gap: 40px; padding-bottom: 60px;">
-                    <!-- About Company -->
-                    <div style="flex: 1 1 300px;">
-                        <h3
-                            style="color: #ff9900; font-size: 24px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
-                            ELITECH DESIGNS </h3>
-                        <div style="background: #ff9900; width: 50px; height: 3px; margin-bottom: 20px;"></div>
-                        <p style="line-height: 1.8; color: #ccc; margin-bottom: 30px; font-size: 15px;">
-                            With over years in the industry, ELITECH DESIGNS Constructors delivers exceptional
-                            commercial and residential construction services. Licensed, bonded, and insured for your
-                            peace of mind.
+       <section style="background: linear-gradient(145deg, #1a1a1a, #2d2d2d); color: #fff; padding: 60px 0 0 0; border-top: 5px solid #ff9900;">
+    <article style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; padding-bottom: 60px;">
+            <!-- About Company -->
+            <div style="flex: 1 1 300px;">
+                <h3 style="color: #ff9900; font-size: 24px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
+                    ELITECH DESIGNS </h3>
+                <div style="background: #ff9900; width: 50px; height: 3px; margin-bottom: 20px;"></div>
+                <p style="line-height: 1.8; color: #ccc; margin-bottom: 30px; font-size: 15px;">
+                    With over years in the industry, ELITECH DESIGNS Constructors delivers exceptional
+                    commercial and residential construction services. Licensed, bonded, and insured for your
+                    peace of mind.
+                </p>
+                <div style="display: flex; gap: 15px; margin-top: 30px;">
+                    <a href="https://www.facebook.com/share/16KNNoQNA8/?mibextid=wwXIfr"
+                        style="background: #333; color: #ff9900; padding: 12px; border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/elitechdesigns?igsh=a2szOTdjMmU0d2ky&utm_source=qr"
+                        style="background: #333; color: #ff9900; padding: 12px; border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@EliTechDesigns"
+                        style="background: #333; color: #ff9900; padding: 12px; border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Our Services -->
+            <div style="flex: 1 1 250px;">
+                <h3 style="color: #ff9900; font-size: 24px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
+                    Our Services</h3>
+                <div style="background: #ff9900; width: 50px; height: 3px; margin-bottom: 20px;"></div>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 12px;">
+                    <a href="#"
+                        style="color: #ccc; text-decoration: none; padding: 8px 0; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-hammer" style="color: #ff9900; font-size: 14px;"></i>
+                        Commercial Construction
+                    </a>
+                    <a href="#"
+                        style="color: #ccc; text-decoration: none; padding: 8px 0; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-home" style="color: #ff9900; font-size: 14px;"></i>
+                        Residential Building
+                    </a>
+                    <a href="#"
+                        style="color: #ccc; text-decoration: none; padding: 8px 0; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-tools" style="color: #ff9900; font-size: 14px;"></i>
+                        Renovation Services
+                    </a>
+                    <a href="#"
+                        style="color: #ccc; text-decoration: none; padding: 8px 0; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-hard-hat" style="color: #ff9900; font-size: 14px;"></i>
+                        Construction Management
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div style="flex: 1 1 300px;">
+                <h3 style="color: #ff9900; font-size: 24px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
+                    Contact Us</h3>
+                <div style="background: #ff9900; width: 50px; height: 3px; margin-bottom: 20px;"></div>
+                <div style="display: flex; flex-direction: column; gap: 25px;">
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <i class="fas fa-map-marker-alt" style="color: #ff9900; font-size: 20px;"></i>
+                        <p style="color: #ccc; margin: 0;">
+                            Santaldih, Purulia (W.B.), Pin- 723145
                         </p>
-                        <div style="display: flex; gap: 15px; margin-top: 30px;">
-                            <a href="https://www.facebook.com/share/16KNNoQNA8/?mibextid=wwXIfr"
-                                style="background: #333; color: #ff9900; padding: 12px; border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com/elitechdesigns?igsh=a2szOTdjMmU0d2ky&utm_source=qr"
-                                style="background: #333; color: #ff9900; padding: 12px; border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@EliTechDesigns"
-                                style="background: #333; color: #ff9900; padding: 12px; border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
                     </div>
-
-                    <!-- Our Services -->
-                    <div style="flex: 1 1 250px;">
-                        <h3
-                            style="color: #ff9900; font-size: 24px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
-                            Our Services</h3>
-                        <div style="background: #ff9900; width: 50px; height: 3px; margin-bottom: 20px;"></div>
-                        <div style="display: grid; grid-template-columns: 1fr; gap: 12px;">
-                            <a href="#"
-                                style="color: #ccc; text-decoration: none; padding: 8px 0; display: flex; align-items: center; gap: 10px;">
-                                <i class="fas fa-hammer" style="color: #ff9900; font-size: 14px;"></i>
-                                Commercial Construction
-                            </a>
-                            <a href="#"
-                                style="color: #ccc; text-decoration: none; padding: 8px 0; display: flex; align-items: center; gap: 10px;">
-                                <i class="fas fa-home" style="color: #ff9900; font-size: 14px;"></i>
-                                Residential Building
-                            </a>
-                            <a href="#"
-                                style="color: #ccc; text-decoration: none; padding: 8px 0; display: flex; align-items: center; gap: 10px;">
-                                <i class="fas fa-tools" style="color: #ff9900; font-size: 14px;"></i>
-                                Renovation Services
-                            </a>
-                            <a href="#"
-                                style="color: #ccc; text-decoration: none; padding: 8px 0; display: flex; align-items: center; gap: 10px;">
-                                <i class="fas fa-hard-hat" style="color: #ff9900; font-size: 14px;"></i>
-                                Construction Management
-                            </a>
-                        </div>
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <i class="fas fa-phone-alt" style="color: #ff9900; font-size: 20px;"></i>
+                        <p style="color: #ccc; margin: 0;">
+                            Office: +91 7908400439<br>
+                            Mobile: +91 9800233177
+                        </p>
                     </div>
-
-                    <!-- Contact Info -->
-                    <div style="flex: 1 1 300px;">
-                        <h3
-                            style="color: #ff9900; font-size: 24px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
-                            Contact Us</h3>
-                        <div style="background: #ff9900; width: 50px; height: 3px; margin-bottom: 20px;"></div>
-                        <div style="display: flex; flex-direction: column; gap: 25px;">
-                            <div style="display: flex; gap: 15px; align-items: center;">
-                                <i class="fas fa-map-marker-alt" style="color: #ff9900; font-size: 20px;"></i>
-                                <p style="color: #ccc; margin: 0;">
-                                    Santaldih, Purulia (W.B.), Pin- 723145
-                                </p>
-                            </div>
-                            <div style="display: flex; gap: 15px; align-items: center;">
-                                <i class="fas fa-phone-alt" style="color: #ff9900; font-size: 20px;"></i>
-                                <p style="color: #ccc; margin: 0;">
-                                    Office: +91 7908400439<br>
-                                    Mobile: +91 9800233177
-                                </p>
-                            </div>
-                            <div style="display: flex; gap: 15px; align-items: center;">
-                                <i class="fas fa-envelope" style="color: #ff9900; font-size: 20px;"></i>
-                                <p style="color: #ccc; margin: 0;">
-                                    design.elitech@gmail.com
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Map Section -->
-                    <div style="flex: 1 1 250px;">
-                        <h3
-                            style="color: #ff9900; font-size: 24px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
-                            Our Location</h3>
-                        <div style="background: #ff9900; width: 50px; height: 3px; margin-bottom: 20px;"></div>
-                        <div
-                            style="position: relative; overflow: hidden; padding-bottom: 75%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.469142103783!2d86.46963240000001!3d23.5875021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f691d4738db291%3A0x50ad0212d79c44da!2sEliTech%20Designs!5e0!3m2!1sen!2sin!4v1747981742236!5m2!1sen!2sin "
-                                width="600" height="450"
-                                style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <i class="fas fa-envelope" style="color: #ff9900; font-size: 20px;"></i>
+                        <p style="color: #ccc; margin: 0;">
+                            design.elitech@gmail.com
+                        </p>
                     </div>
                 </div>
-            </article>
-
-            <div
-                style="background: rgba(0,0,0,0.3); padding: 25px; text-align: center; border-top: 1px solid rgba(255,153,0,0.2);">
-                <p style="color: #ccc; margin: 0; font-size: 14px;">
-                    © 2025 ELITECH DESIGNS. All rights reserved
-                </p>
             </div>
-        </section>
 
+            <!-- Map Section -->
+            <div style="flex: 1 1 250px;">
+                <h3 style="color: #ff9900; font-size: 24px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
+                    Our Location</h3>
+                <div style="background: #ff9900; width: 50px; height: 3px; margin-bottom: 20px;"></div>
+                <div style="position: relative; overflow: hidden; padding-bottom: 75%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.469142103783!2d86.46963240000001!3d23.5875021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f691d4738db291%3A0x50ad0212d79c44da!2sEliTech%20Designs!5e0!3m2!1sen!2sin!4v1747981742236!5m2!1sen!2sin " 
+                        width="600" 
+                        height="450" 
+                        style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </article>
 
+    <div style="background: rgba(0,0,0,0.3); padding: 25px; text-align: center; border-top: 1px solid rgba(255,153,0,0.2);">
+        <p style="color: #ccc; margin: 0; font-size: 14px;">
+            © 2025 ELITECH DESIGNS. All rights reserved
+        </p>
+    </div>
+</section>
+
+       
         <!-- WhatsApp Floating Icon -->
         <a href="https://wa.me/917908400439" target="" id="whatsapp-float" title="Chat with us on WhatsApp">
             <i class="fab fa-whatsapp"></i>
@@ -2098,18 +1741,16 @@
                 transition: background 0.2s, box-shadow 0.2s;
                 text-decoration: none;
             }
-
             #call-float:hover {
                 background: #0056b3;
                 box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
                 color: #fff;
             }
-
             /* Prevent overlap with WhatsApp button on small screens */
             @media (max-width: 600px) {
                 #call-float {
                     left: 16px;
-                    bottom: 32px;
+                    bottom: 36px;
                     width: 56px;
                     height: 56px;
                     font-size: 1.5rem;
