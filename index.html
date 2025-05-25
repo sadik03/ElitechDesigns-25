@@ -108,78 +108,94 @@
     </nav>
 
     <!-- Start Header -->
-    <header>
+    <header >
+        <!-- Decorative shapes -->
+        
+       
         <div class="container"
-            style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap:32px;">
+            style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap:32px; position: relative; z-index: 1;">
             <div class="textBx" data-aos="fade-up" data-aos-duration="1000"
                 style="flex: 1 1 ; min-width: 220px; margin-right: 40px; margin-top: 1;">
-                <h3>We are professional and creative</h3>
-                <h1>certified engineers<br><span>providing construction services</span></h1>
-                <p>Experience integrity, teamwork, and quality in every construction project. Your vision is our
-                    mission, delivered with precision, passion, and purpose.</p>
-                <!-- <div class="header-btns"></div>
-                    <a href="#" target="_blank" class="btn">Show More</a>
-                    <a href="#" target="_blank" class="btn">View Project</a>
-                </div> -->
+                <h3 style="color: #f9b233; font-size: 1.3em; font-weight: 600; letter-spacing: 1px; margin-bottom: 10px;">
+                    We are professional and creative
+                </h3>
+                <h1 style="font-size: 2.6em; font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 18px;">
+                    Certified Engineers<br>
+                    <span style="color: #f9b233; background: linear-gradient(90deg, #f9b233 60%, #ffe9b3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 0.85em; font-weight: 700;">
+                        Providing Construction Services
+                    </span>
+                </h1>
+                <p style="font-size: 1.15em; color: #fff; margin-bottom: 28px; max-width: 480px;">
+                    Experience integrity, teamwork, and quality in every construction project.<br>
+                    <span style="color: #f9b233; font-weight: 600;">Your vision is our mission</span>, delivered with precision, passion, and purpose.
+                </p>
+                <div class="header-btns" style="display: flex; gap: 18px; margin-top: 10px;">
+                    <a href="#about" class="btn" style="background: #f9b233; color: #fff; padding: 12px 32px; border-radius: 30px; font-weight: 600; font-size: 1.05em; box-shadow: 0 4px 16px rgba(249,178,51,0.13); transition: background 0.2s, transform 0.2s; text-decoration: none;">Show More</a>
+                    <a href="#portfolio" class="btn" style="background: #fff; color: #f9b233; padding: 12px 32px; border-radius: 30px; font-weight: 600; font-size: 1.05em; border: 2px solid #f9b233; box-shadow: 0 4px 16px rgba(249,178,51,0.09); transition: background 0.2s, color 0.2s, transform 0.2s; text-decoration: none;">View Projects</a>
+                </div>
                 <style>
-                    @media (max-width: 600px) {
-                        .header-btns {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            gap: 0;
-                            margin: 16px 0 0 0;
-                        }
-
-                        .header-btns .btn {
-                            flex: 1 1 0;
-                            text-align: center;
-                            margin: 0 2px;
-                        }
+                    .header-btns .btn:hover {
+                        background: #ffd77a !important;
+                        color: #222 !important;
+                        transform: translateY(-2px) scale(1.04);
+                    }
+                    .header-btns .btn:last-child:hover {
+                        background: #f9b233 !important;
+                        color: #fff !important;
                     }
                 </style>
             </div>
             <div class="formBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
-                style="flex: 1 1 350px; min-width: 260px; background: transparent; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 32px 24px; max-width: 400px; backdrop-filter: blur(6px);">
-                <h3 style="margin-bottom: 18px; color: #FFCB0F; font-size: 1.3em; font-weight: 600;">Request Free Tech
-                    Consultation</h3>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <!-- Web3Forms Required Fields -->
+                style="flex: 1 1 350px; min-width: 260px; background: transparent; border-radius: 18px; box-shadow: 0 8px 32px rgba(249,178,51,0.13); padding: 36px 28px; max-width: 400px; backdrop-filter: blur(8px); border: 1.0px solid #ffe9b3;">
+                <h3 style="margin-bottom: 18px; color: #f9b233; font-size: 1.3em; font-weight: 700; letter-spacing: 1px; text-align: center;">
+                    Request Free Tech Consultation
+                </h3>
+                <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
                     <input type="hidden" name="access_key" value="5fbd9683-1631-4aca-b3cc-192291d421b1">
                     <input type="hidden" name="subject" value="New Consultation Request">
                     <input type="hidden" name="redirect" value="https://www.elitechdesigns.com/">
                     <input type="checkbox" name="botcheck" id="" style="display: none;">
-
-                    <div class="inputBox" style="position: relative; margin-bottom: 14px;">
-                        <input type="text" name="name" placeholder="Name" required
-                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
-                    </div>
-
-                    <div class="inputBox" style="position: relative; margin-bottom: 14px;">
-                        <input type="email" name="email" placeholder="Email" required
-                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
-                    </div>
-
-                    <div class="inputBox" style="position: relative; margin-bottom: 14px;">
-                        <input type="tel" name="phone" placeholder="Phone" required
-                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
-                    </div>
-
-                    <div class="inputBox" style="position: relative; margin-bottom: 14px;">
-                        <input type="text" name="city" placeholder="Enter City" required
-                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff;">
-                    </div>
-
                     <div class="inputBox" style="position: relative; margin-bottom: 16px;">
-                        <textarea name="project_details" placeholder="Project Details" required rows="4"
-                            style="width: 100%; padding: 12px 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 0.8em; background: transparent; color: #fff; resize: vertical;"></textarea>
+                        <input type="text" name="name" placeholder="Name" required
+                            style="width: 100%; padding: 13px 12px; border: 1.5px solid #f9b233; border-radius: 7px; outline: none; font-size: 1em; background: #fffbe7; color: #222; transition: border 0.2s;">
                     </div>
-
+                    <div class="inputBox" style="position: relative; margin-bottom: 16px;">
+                        <input type="email" name="email" placeholder="Email" required
+                            style="width: 100%; padding: 13px 12px; border: 1.5px solid #f9b233; border-radius: 7px; outline: none; font-size: 1em; background: #fffbe7; color: #222; transition: border 0.2s;">
+                    </div>
+                    <div class="inputBox" style="position: relative; margin-bottom: 16px;">
+                        <input type="tel" name="phone" placeholder="Phone" required
+                            style="width: 100%; padding: 13px 12px; border: 1.5px solid #f9b233; border-radius: 7px; outline: none; font-size: 1em; background: #fffbe7; color: #222; transition: border 0.2s;">
+                    </div>
+                    <div class="inputBox" style="position: relative; margin-bottom: 16px;">
+                        <input type="text" name="city" placeholder="Enter City" required
+                            style="width: 100%; padding: 13px 12px; border: 1.5px solid #f9b233; border-radius: 7px; outline: none; font-size: 1em; background: #fffbe7; color: #222; transition: border 0.2s;">
+                    </div>
+                    <div class="inputBox" style="position: relative; margin-bottom: 20px;">
+                        <textarea name="project_details" placeholder="Project Details" required rows="4"
+                            style="width: 100%; padding: 13px 12px; border: 1.5px solid #f9b233; border-radius: 7px; outline: none; font-size: 1em; background: #fffbe7; color: #222; resize: vertical; caret-color: #f9b233; transition: border 0.2s;"></textarea>
+                    </div>
                     <button type="submit" class="btn"
-                        style="width: 100%; padding: 12px 0; border: none; border-radius: 5px; background: #f9b233; color: #fff; font-size: 1.1em; font-weight: 600; cursor: pointer; transition: background 0.2s;">
+                        style="width: 100%; padding: 13px 0; border: none; border-radius: 7px; background: linear-gradient(90deg, #f9b233 80%, #ffe9b3 100%); color: #fff; font-size: 1.15em; font-weight: 700; cursor: pointer; box-shadow: 0 2px 12px rgba(249,178,51,0.13); transition: background 0.2s;">
                         Submit
                     </button>
                 </form>
+                <style>
+                    .formBx .inputBox input:focus,
+                    .formBx .inputBox textarea:focus {
+                        border-color: #ffcb0f !important;
+                        background: #fffde7 !important;
+                    }
+                    .formBx .inputBox input::placeholder,
+                    .formBx .inputBox textarea::placeholder {
+                        color: #bfa14a !important;
+                        opacity: 1;
+                    }
+                    .formBx .btn:hover {
+                        background: #ffd77a !important;
+                        color: #222 !important;
+                    }
+                </style>
             </div>
         </div>
         <style>
@@ -189,18 +205,15 @@
                     align-items: stretch !important;
                     gap: 18px !important;
                 }
-
                 header .textBx,
                 header .formBx {
                     margin-right: 0 !important;
                     max-width: 100% !important;
                 }
-
                 header .formBx {
                     margin-top: 0 !important;
                 }
             }
-
             @media (max-width: 600px) {
                 header .container {
                     flex-direction: column;
@@ -208,102 +221,63 @@
                     gap: 8px !important;
                     padding: 0 4px !important;
                 }
-
                 header .textBx,
                 header .formBx {
                     margin-right: 0 !important;
                     max-width: 100% !important;
                 }
-
                 header .textBx {
                     padding: 10px 4px 0 4px !important;
                 }
-
                 header .formBx {
                     margin-top: 0 !important;
                     padding: 16px 8px !important;
                     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
                 }
-
                 header .textBx h1 {
                     font-size: 1.7em !important;
                 }
-
                 header .textBx h3 {
                     font-size: 1em !important;
                 }
-
                 header .textBx p {
                     font-size: 0.92em !important;
                 }
-
                 header .formBx h3 {
                     font-size: 1em !important;
                     margin-bottom: 10px !important;
                 }
-
                 header .formBx .inputBox input,
-                header .formBx .inputBox select {
-                    font-size: 0.75em !important;
-                    padding: 8px 7px !important;
+                header .formBx .inputBox textarea {
+                    font-size: 0.85em !important;
+                    padding: 9px 7px !important;
                 }
-
                 header .formBx .inputBox {
                     margin-bottom: 8px !important;
                 }
-
                 header .formBx button.btn {
                     font-size: 1em !important;
                     padding: 9px 0 !important;
                 }
-            }
-
-            .formBx .inputBox input::placeholder,
-            .formBx .inputBox select,
-            .formBx .inputBox select option {
-                color: #fff !important;
-                opacity: 1;
-            }
-
-            .formBx .inputBox select option {
-                color: #222;
-                background: #fff;
-            }
-
-            .formBx .inputBox select option[disabled] {
-                color: #bbb;
-                background: #222;
-            }
-
-            .formBx .inputBox input:focus+label,
-            .formBx .inputBox input:not(:placeholder-shown)+label,
-            .formBx .inputBox textarea:focus+label,
-            .formBx .inputBox textarea:not(:placeholder-shown)+label {
-                top: -10px;
-                left: 8px;
-                font-size: 0.85em;
-                color: #f9b233;
-                background: #fff;
-                padding: 0 4px;
-            }
-
-            .formBx .inputBox input,
-            .formBx .inputBox textarea {
-                background: #fafbfc;
-            }
-
-            .formBx .inputBox label {
-                pointer-events: none;
+                .header-btns {
+                    flex-direction: column !important;
+                    gap: 8px !important;
+                }
+                .header-btns .btn {
+                    width: 100% !important;
+                    text-align: center;
+                    margin: 0 !important;
+                }
             }
         </style>
     </header>
     <!-- Start About -->
     <section class="about" id="about">
         <div class="container">
-            <div class="textBx" data-aos="fade-right" data-aos-duration="1000">
+            <div class="textBx" data-aos="fade-right" data-aos-duration="1000" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 <h2>Welcome to ELITECH DESIGNS</h2>
 
-                <p style="text-align: justify;">At <strong>ELITECH DESIGNS</strong>, we don’t just build houses—we craft
+                <p style="text-align: justify;" >At <strong>ELITECH DESIGNS</strong>, we don’t just build houses—we craft
                     living spaces that embody your personality,
                     aspirations, and lifestyle. As a trusted leader in home construction, water supply management, and
                     hydraulics design, we transform visions into reality with exceptional expertise, innovative design,
@@ -364,7 +338,7 @@
     <!-- Start Features -->
     <section class="features">
         <div class="container">
-            <div class="textBx" data-aos="fade-down" data-aos-duration="2000">
+            <div class="textBx" data-aos="fade-down" data-aos-duration="2000" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 <h2>why choose us?</h2>
                 <p style="text-align: justify;"> With the help of our skilled staff and easy process, we turn your home
                     building visions into reality.
@@ -424,7 +398,7 @@
             </div>
         <div class="container">
            
-            <div class="services-cards">
+            <div class="services-cards" >
                 <!-- Card 1 -->
                 <div class="service-card" data-aos="fade-up" data-aos-duration="1200">
                     <div class="service-img">
@@ -613,10 +587,12 @@
                 }
 
                 .service-img img {
-                    width: 360px;
-                    height: 220px;
+                    width: 100%;
+                    height: auto;
                 }
             }
+
+            
         </style>
     </section>
 
@@ -1263,9 +1239,7 @@
 
         <!-- Start founder -->
         <section class="founders" id="founders">
-            <div class="container"
-                style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; justify-content: center;">
-                <div class="textBx" data-aos="fade-right" data-aos-duration="2000"
+            <div class="textBx" data-aos="fade-right" data-aos-duration="2000"
                     style="flex: 1 1 120px; min-width: 220px;">
                     <h2>Meet Our Founders</h2>
                     <p style="font-size: 1.05em; color: #555; margin-bottom: 20px;">
@@ -1274,6 +1248,9 @@
                         to deliver excellence in every project.
                     </p>
                 </div>
+            <div class="container"
+                style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; justify-content: center;">
+                
                 <!-- Founder Card -->
               
                   <div class="founder-card" data-aos="fade-up" data-aos-duration="1400" style="background: linear-gradient(135deg, #f9b233 0%, #ffe9b3 100%); box-shadow: 0 6px 24px rgba(249,178,51,0.13); border: none;">
@@ -1467,7 +1444,7 @@
                                 
                                 <div class="social-links"
                                     style="display: flex; gap: 1.2rem; justify-content: center; margin-top: 1.5rem;">
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a href="https://www.facebook.com/share/1AKKu5ZvtG/?mibextid=wwXIfr" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-facebook-f"
@@ -1479,7 +1456,7 @@
                                         <i class="fab fa-linkedin-in"
                                             style="color: #0984e3; transition: color 0.3s ease;"></i>
                                     </a>
-                                    <a style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
+                                    <a href="https://www.instagram.com/sartaz77?igsh=NDAyMHF5eW5razBj&utm_source=qr" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #f8f9fa; display: flex; 
                  align-items: center; justify-content: center; transition: all 0.3s ease; text-decoration: none;
                  box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
                                         <i class="fab fa-instagram"
