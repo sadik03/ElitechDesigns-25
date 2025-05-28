@@ -168,7 +168,7 @@ input.btn2:hover {
 /* -----------------
 Page Loader 
 --------------*/
-/* @keyframes pageloader {
+@keyframes pageloader {
 
     0% {
         transform: rotate(0);
@@ -185,41 +185,7 @@ Page Loader
     }
 }
 
-.pageLoader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--navBackground);
-    z-index: 999999999;
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease;
-    -moz-transition: all .6s ease;
-    -ms-transition: all .6s ease;
-    -o-transition: all .6s ease;
-}
 
-.pageLoader.fade-out {
-    opacity: 0;
-}
-
-.pageLoader::before {
-    content: '';
-    position: absolute;
-    left: calc(50% - 50px);
-    top: calc(50% - 50px);
-    display: block;
-    border-radius: 50%;
-    width: 0;
-    height: 0;
-    margin: 8px;
-    box-sizing: border-box;
-    border: 62px solid var(--mainColor);
-    border-color: var(--mainColor) transparent var(--mainColor) transparent;
-    animation: pageloader 1.2s infinite;
-    -webkit-animation: pageloader 1.2s infinite;
-}*/
 
 .container {
     max-width: 90%;
